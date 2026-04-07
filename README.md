@@ -1,3 +1,74 @@
-# DiabetML
-Diabetes is an illness caused because of high glucose level in a human body. Diabetes should not be ignored if it is untreated then Diabetes may cause some major issues in a person like: heart related problems, kidney problem, blood pressure, eye damage and it can also affects other organs of human body. Diabetes can be controlled if it is predicted earlier. To achieve this goal this project work we will do early prediction of Diabetes in a human body or a patient for a higher accuracy through applying, Various Machine Learning Techniques. Machine learning techniques Provide better result for prediction by con- structing models from datasets collected from patients. In this work we will use Machine Learning Classification and ensemble techniques on a dataset to predict diabetes. Which are K-Nearest Neighbor (KNN), Logistic Regression (LR), Decision Tree (DT), Support Vector Machine (SVM), Gradient Boosting (GB) and Random Forest (RF). The accuracy is different for every model when compared to other models. The Project work gives the accurate or higher accuracy model shows that the model is capa- ble of predicting diabetes effectively. Our Result shows that Random Forest achieved higher accuracy compared to other machine learning techniques.
 
+Diabetes Prediction System
+Overview
+Diabetes is a chronic condition caused by high blood glucose levels that can lead to severe complications such as heart disease, kidney failure, and nerve damage. Early prediction is critical for effective management. This project implements and compares various Machine Learning classification and ensemble techniques to predict diabetes in patients with high accuracy.
+
+Features
+Early Prediction: Identifies diabetic risk based on clinical parameters.
+Multi-Model Comparison: Evaluates several ML algorithms.
+High Accuracy: Optimized models to ensure reliable results.
+Data Visualization: Provides insights into the dataset and model performance.
+Tech Stack
+Language: Python
+Libraries:
+Data Processing: Pandas, NumPy
+Machine Learning: Scikit-Learn
+Visualization: Matplotlib, Seaborn
+Machine Learning Models
+The project evaluates the following algorithms:
+
+K-Nearest Neighbor (KNN)
+Logistic Regression (LR)
+Decision Tree (DT)
+Support Vector Machine (SVM)
+Gradient Boosting (GB)
+Random Forest (RF) — Top performing model
+Setup and Installation
+Prerequisites
+Python 3.8+
+pip (Python package manager)
+Installation
+Clone the repository:
+
+ copy
+bash
+
+git clone https://github.com/your-username/diabetes-prediction.git
+cd diabetes-prediction
+Install dependencies:
+
+ copy
+bash
+
+pip install -r requirements.txt
+Usage
+Place your dataset (e.g., diabetes.csv) in the data/ directory.
+Run the training script:
+ copy
+bash
+
+python train_model.py
+To predict using the pre-trained model:
+ copy
+bash
+
+python predict.py --input "path_to_patient_data.json"
+Performance Results
+Based on experimental results, the accuracy of each model was compared. The Random Forest algorithm achieved the highest accuracy, making it the most effective model for this dataset.
+
+| Model | Status | | :--- | :--- | | Random Forest | Highest Accuracy | | Gradient Boosting | High Accuracy | | Logistic Regression | Baseline | | KNN/SVM/DT | Comparative Analysis |
+
+Deployment
+For production deployment, the Random Forest model is serialized using pickle or joblib and can be integrated into a web interface (e.g., Flask or FastAPI).
+
+Contributing
+Fork the repository.
+Create a feature branch: git checkout -b feature-name.
+Commit changes: git commit -m 'Add some feature'.
+Push to the branch: git push origin feature-name.
+Open a Pull Request.
+License
+Distributed under the MIT License. See LICENSE for more information.
+
+Contact
+Project Link: https://github.com/your-username/diabetes-prediction
